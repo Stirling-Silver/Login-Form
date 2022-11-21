@@ -1,1 +1,10 @@
 /* CSS Style Sheet */
+html {
+    text-align: center;
+}
+
+
+
+button {
+    width: 250px;
+}
