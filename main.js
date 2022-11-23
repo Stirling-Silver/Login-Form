@@ -4,6 +4,8 @@ document.getElementById(`Username`);
 document.getElementById(`Password`);
 document.getElementById("Login").addEventListener("click", Login);
 
+//This code works
+
 function Login() {
   //Login Processes
   let UsernameR = document.getElementById("Username").value;
