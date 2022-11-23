@@ -1,15 +1,20 @@
 // JavaScript Code
+let LoginEL = document.getElementById("Login");
 document.getElementById(`Username`);
 document.getElementById(`Password`);
-document.addEventListener("click", Login);
+document.getElementById("Login").addEventListener("click", Login);
 
-//Login Processes
-let U = prompt(`Enter your username:`);
+function Login() {
+  //Login Processes
+  let UsernameR = document.getElementById("Username").value;
 
-let P = prompt(`Enter your password:`);
+  let PasswordR = document.getElementById("Password").value;
 
-if (U === `Admin` && P === `Key`) {
-  alert(`Valid!`);
-} else {
-  alert(`Invalid!`);
+  if (UsernameR === `Admin` && PasswordR === `Key`) {
+    LoginEL = `Valid Login Credentials!`;
+  } else {
+    LoginEL = `Invalid Login Credentials!`;
+  }
+  let LeL = LoginEL;
+  document.getElementById("LeL").innerHTML = `${LeL}`;
 }

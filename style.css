@@ -3,7 +3,9 @@ html {
     text-align: center;
 }
 
-
+.LoginInfo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
 button {
     width: 250px;
