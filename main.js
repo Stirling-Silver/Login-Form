@@ -1,7 +1,4 @@
 // JavaScript Code
-let LoginEL = document.getElementById("Login");
-document.getElementById(`Username`);
-document.getElementById(`Password`);
 document.getElementById("Login").addEventListener("click", Login);
 
 //This code works
@@ -13,10 +10,14 @@ function Login() {
   let PasswordR = document.getElementById("Password").value;
 
   if (UsernameR === `Admin` && PasswordR === `Key`) {
-    LoginEL = `Valid Login Credentials!`;
+    Login = `Valid Login Credentials!`;
+  } else if (UsernameR === `Admin`) {
+    Login = `Invalid Password!`;
+  } else if (PasswordR === `Key`) {
+    Login = `Invalid Username!`;
   } else {
-    LoginEL = `Invalid Login Credentials!`;
+    Login = `Invalid Login Credentials!`;
   }
-  let LeL = LoginEL;
+  let LeL = Login;
   document.getElementById("LeL").innerHTML = `${LeL}`;
 }
