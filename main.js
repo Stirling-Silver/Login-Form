@@ -18,6 +18,5 @@ function Login() {
   } else {
     Login = `Invalid Login Credentials!`;
   }
-  let LeL = Login;
-  document.getElementById("LeL").innerHTML = `${LeL}`;
+  document.getElementById("LeL").innerHTML = `${Login}`;
 }
